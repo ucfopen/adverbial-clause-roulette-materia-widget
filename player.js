@@ -2,7 +2,7 @@
   Namespace('Roulette').Engine = (function() {
     
     start = function(instance, qset, version) {
-      // Listeners
+      // Listeners go here
 
       $('#betting').submit(handleBet(game));
       $('#guessing').submit(handleGuess(game));
@@ -10,8 +10,12 @@
       return Materia.Engine.setHeight();
     };
     
+    // CamelCase = functions/Objects
+    // underscores = variables
+    // Note a lot of this was copied from old version in vanilla js.  You can abuse jQuery now, so go crazy.  :)
 
-    // game object dec
+
+    // game object declaration
     // patterns = object from below
     function theGame(total_money, patterns, bet) {
       this.win_once = "You've won the round!";
@@ -27,7 +31,7 @@
     }
 
     // patterns object
-    // Will presumably have a sample library to pull from with sentences and their patterns?  Implement that later, I guess.  Rollin' with numbers for now!
+    // Will presumably have a sample library to pull from with sentences and their patterns?  Implement that later (SEE sentences.txt and use a qset!!!).  Rollin' with numbers for now!
     function thePatterns(num_patterns, curr_pattern, curr_bet, curr_guess), {
       this.num = num_patterns;
       // Current winning pattern
@@ -81,10 +85,12 @@
         if (isMatch(this.patterns.curr_pattern, this.patterns.curr_bet)) {
           this.total_money = this.winMoney(2);
           // tell user they won double
+          // Update DOM
         }
         else {
           this.total_money = winMoney(1);
           // tell user they won 
+          // Update DOM
         }
       }
       else {
@@ -101,6 +107,7 @@
       * Stores it as curr_sample within the pattern object
       */
      function getSample() {
+      // ASK ABOUT QSETS AND USE THEM INSTEAD OF WHAT IS BELOW!!
 
       // get array of sentences from file call it... sentences[][]
       // Go random!
@@ -158,6 +165,7 @@
 
 
     // RESET FUNCTION
+    // Reset game state to start
 
     function reset() {
 
