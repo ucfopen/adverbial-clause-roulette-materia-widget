@@ -30,7 +30,7 @@
 <div id="main">
 	<h1>Roulette</h1>
 	<p>Which sentence pattern do you think the wheel will land on? <strong>Place your bet!</strong></p>
-	<p>You currently have $<span id="total">1000</span>.  How much would you like to bet?</p>
+	<p>You currently have $<span id="total"><%= theGame.total_money %></span>.  How much would you like to bet?</p>
 	<form id="betting" action="">
 		<p id="the_action">I'd like to <label for="bet">bet</label> 
 			<select id="bet">
