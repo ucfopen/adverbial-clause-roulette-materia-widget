@@ -1,9 +1,10 @@
 (function() {
   Namespace('Roulette').Engine = (function() {
+
     
     start = function(instance, qset, version) {
       // Listeners go here
-
+console.log("Hello!");
       $('#betting').submit(handleBet(game));
       $('#guessing').submit(handleGuess(game));
       
@@ -20,7 +21,7 @@
     function theGame(total_money, patterns, bet) {
       this.win_once = "You've won the round!";
       this.win_double = "You've won double this round!";
-      this.lose = "You've lost the round.";
+      this.lose = "You've lost this round.";
       this.total_money = total_money;
       this.bet = bet;
       this.patterns = patterns;
@@ -32,7 +33,7 @@
 
     // patterns object
     // Will presumably have a sample library to pull from with sentences and their patterns?  Implement that later (SEE sentences.txt and use a qset!!!).  Rollin' with numbers for now!
-    function thePatterns(num_patterns, curr_pattern, curr_bet, curr_guess), {
+    function thePatterns(num_patterns, curr_pattern, curr_bet, curr_guess) {
       this.num = num_patterns;
       // Current winning pattern
       this.curr_pattern = curr_pattern;
@@ -173,7 +174,7 @@
     }
 
 
-
+    //This section was commented out
     // _submitAnswer = function() {
 
     //   Materia.Score.submitQuestionForScoring(_currentQuestion.id, answer.text);

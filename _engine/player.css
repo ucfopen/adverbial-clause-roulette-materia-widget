@@ -565,6 +565,10 @@ body {
   animation: numberEnter 0.3s;
 }
 
+#total {
+  color: red;
+}
+
 @keyframes numberExit {
   0% {
     -webkit-transform: rotateX(0deg);
