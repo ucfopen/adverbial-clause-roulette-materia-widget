@@ -1,5 +1,3 @@
-//testing
-
 (function() {
   Namespace('Roulette').Engine = (function() {
     
