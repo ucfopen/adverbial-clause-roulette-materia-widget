@@ -1,3 +1,44 @@
+#title1 {
+  padding: 0px;
+  margin-top: 0px;
+  border: 0px;
+  display: inline-block;
+  float: left;
+}
+
+#title2 {
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border: 0px;
+  text-align: right;
+  display: block;
+  float: right;
+}
+
+#title_ {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 45px;
+  color: #caab49;
+}
+#ball {
+  width: 300px;
+  height: 300px;
+  margin-top: -101.5%;
+}
+
+#container {
+  background:url("assets/images/background.png") no-repeat;
+  margin: 10px;
+  padding: 17.5px 17.5px 17.5px 17.5px;
+}
+
+#main {
+  padding: 0px 17.5px 17.5px 17.5px;
+  clear: both;
+}
+
 * {
   outline: 0;
 }
@@ -27,6 +68,7 @@ html {
 
 body {
   overflow: hidden;
+  color: #fff;
 }
 
 html,
@@ -41,12 +83,6 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-}
-
-#main {
-  background:#fff;
-  margin: 1em;
-  padding: 2em;
 }
 
 .header {
@@ -65,7 +101,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111f2c', endColorstr='#1a2b3f', GradientType=0);
 }
 
-.header h1 {
+/*.header h1 {
   line-height: 90px;
   height: 90px;
   margin: 0;
@@ -76,7 +112,7 @@ body {
   width: 77%;
   font-size: 25px;
   font-weight: normal;
-}
+}*/
 
 .header h1 span {
   display: inline-block;
@@ -164,7 +200,7 @@ body {
   -webkit-transition: 200ms;
 }
 
-.gameboard .category .title {
+.gameboard .category {
   float: left;
   background: #fff;
   border: 3px solid #fff;
@@ -445,6 +481,14 @@ body {
   cursor: default;
 }
 
+#roulette {
+  float: left;
+  height: 300px; 
+  width: 300px;
+  display: block;
+  background:url("assets/images/roulette_wheel.png");
+}
+
 .notice {
   color: white;
   display: block;
@@ -568,6 +612,29 @@ body {
 #total {
   color: red;
 }
+
+#title {
+  text-align: center;
+}
+
+#content { 
+  overflow:hidden; 
+  width: 100%; 
+} 
+
+#left  { 
+  float:left; 
+  padding: 1px;
+  margin: 0px ;
+  width: 300px;
+}
+
+#right {
+  float:right; 
+  margin:0px; 
+  padding: 1px; 
+  width: 51%;
+} 
 
 @keyframes numberExit {
   0% {

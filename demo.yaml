@@ -1,305 +1,4141 @@
----
-name: TV Show Trivia
-qset:
-  version: 1
-  data:
-    items:
-      - 
-        name: Animated TV
-        items:
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: >
-                  The Simpsons takes place in what
-                  fictional town?
-            answers:
-              - 
-                value: 0
-                text: Wellville
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: Arlen
-                options:
-                  letter: B
-              - 
-                value: 100
-                text: Springfield
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: Gotham
-                options:
-                  letter: D
-            options:
-              index: 1
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: Futurama takes place in the year?
-            answers:
-              - 
-                value: 0
-                text: 2,000 AD
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: 2,500 AD
-                options:
-                  letter: B
-              - 
-                value: 100
-                text: 3,000 AD
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: 15,000 AD
-                options:
-                  letter: D
-            options:
-              index: 2
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: >
-                  This animated TV character sells
-                  "Propane and propane accessories".
-            answers:
-              - 
-                value: 100
-                text: Hank Hill
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: Peter Griffin
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: Homer Simpson
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: Jay Sherman
-                options:
-                  letter: D
-            options:
-              index: 3
-        options:
-          cid: 2
-      - 
-        name: Sitcoms
-        items:
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: 'The characters Ross, Monica, and Chandler come from what TV show?'
-            answers:
-              - 
-                value: 0
-                text: Please Shoot Me
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: Suddenly Susan
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: Caroline in the City
-                options:
-                  letter: C
-              - 
-                value: 100
-                text: Friends
-                options:
-                  letter: D
-            options:
-              index: 1
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: Seinfeld originally aired in what year?
-            answers:
-              - 
-                value: 0
-                text: 1986
-                options:
-                  letter: A
-              - 
-                value: 100
-                text: 1989
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: 1991
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: 1994
-                options:
-                  letter: D
-            options:
-              index: 2
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: >
-                  The character John Becker from the TV sitcom
-                  Becker is played by
-            answers:
-              - 
-                value: 0
-                text: Tom Selleck
-                options:
-                  letter: A
-              - 
-                value: 100
-                text: Ted Danson
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: Burt Reynolds
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: David Hasselhoff
-                options:
-                  letter: D
-            options:
-              index: 3
-        options:
-          cid: 1
-      - 
-        name: Game Shows
-        items:
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: >
-                  Bob Barker hosted The Price is Right for
-                  how many years?
-            answers:
-              - 
-                value: 0
-                text: 15
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: 25
-                options:
-                  letter: B
-              - 
-                value: 100
-                text: 35
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: 45
-                options:
-                  letter: D
-            options:
-              index: 1
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: "Let's Make a Deal was hosted by which game show host?"
-            answers:
-              - 
-                value: 100
-                text: Monty Hall
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: Bob Barker
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: Wink Martendale
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: Dick Clark
-                options:
-                  letter: D
-            options:
-              index: 2
-          - 
-            materiaType: question
-            id: null
-            type: MC
-            questions:
-              - 
-                text: >
-                  Wheel of Fortune began airing in what
-                  year?
-            answers:
-              - 
-                value: 100
-                text: 1975
-                options:
-                  letter: A
-              - 
-                value: 0
-                text: 1981
-                options:
-                  letter: B
-              - 
-                value: 0
-                text: 1985
-                options:
-                  letter: C
-              - 
-                value: 0
-                text: 1989
-                options:
-                  letter: D
-            options:
-              index: 3
-        options:
-          cid: 0
-    options:
-      randomize: 
-
-
+  ---
+  name: "what"
+  version: "1"
+  qset:
+    data: 
+      id: 0
+      user_id: 4525
+      name: ""
+      items: 
+        - 
+          id: 0
+          user_id: 4525
+          name: "Default"
+          items: 
+            - 
+              type: "QA"
+              id: "12487"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12487"
+                  text: "The children are upstairs.  "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19197"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12488"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12488"
+                  text: "The taxicab is here."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19198"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12489"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12489"
+                  text: "The class is in the library."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19199"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12490"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12490"
+                  text: "The next flight to Austin is on Monday."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19200"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12491"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12491"
+                  text: "The workers are in the backyard."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19201"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12492"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12492"
+                  text: "The hospital tour was at four o'clock."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19202"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12493"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12493"
+                  text: "The deepest part of the ocean is in the Marianas trench."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19203"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12494"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12494"
+                  text: "The best beaches are in Florida. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19204"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12495"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12495"
+                  text: "The grammar class is on the Internet. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19205"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12496"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12496"
+                  text: "The baby is in the nursery. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19206"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12497"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12497"
+                  text: "Your car keys are on the kitchen table. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19207"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12498"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12498"
+                  text: "The next showing will be soon. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19208"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12499"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12499"
+                  text: "The fans were in line for tickets to the concert. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19209"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12500"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12500"
+                  text: "The houseplants are in the garage at the moment. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19210"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12501"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12501"
+                  text: "My husband is in front of the TV. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19211"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12502"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12502"
+                  text: "My partner is always in the Magruder computer lab. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19212"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12503"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12503"
+                  text: "My car is frequently in the shop. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19213"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12504"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12504"
+                  text: "Your football is on my roof again. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19214"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12505"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12505"
+                  text: "That diamond necklace is at the pawnshop. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19215"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12506"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12506"
+                  text: "The students are hard working. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19216"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12507"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12507"
+                  text: "The sitcom was hilarious. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19217"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12508"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12508"
+                  text: "The price of gas is ridiculous these days. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19218"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12509"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12509"
+                  text: "She is in a terrific mood. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19219"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12510"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12510"
+                  text: "Brian’s problem is not serious. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19220"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12511"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12511"
+                  text: "The plane was on the runway for over an hour. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19221"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12512"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12512"
+                  text: "The excitement of the fans is really contagious. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19222"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12513"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12513"
+                  text: "The kids are very well behaved. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19223"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12514"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12514"
+                  text: "The kids are all right."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19224"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12515"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12515"
+                  text: "Those bikers are out of shape. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19225"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12516"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12516"
+                  text: "The softball team is on a roll. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19226"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12517"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12517"
+                  text: "The water in the Dead Sea is extremely salty. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19227"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12518"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12518"
+                  text: "The hardest part of the test is almost over. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19228"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12519"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12519"
+                  text: "Flip-flops are stupid. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19229"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12520"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12520"
+                  text: "Water in your ears is so damn irritating. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19230"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12521"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12521"
+                  text: "Web classes are convenient. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19231"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12522"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12522"
+                  text: "That radio is too loud. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19232"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12523"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12523"
+                  text: "The bath water was perfectly comfortable. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19233"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12524"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12524"
+                  text: "On Friday evening, the library was almost deserted. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19234"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12525"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12525"
+                  text: "His sofa is never comfortable. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19235"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12526"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12526"
+                  text: "The vacation has been awful. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19236"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12527"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12527"
+                  text: "The weather has been unusual throughout the country in the past few months. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19237"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12528"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12528"
+                  text: "The students are scholars. "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19238"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12529"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12529"
+                  text: "Professor Pyle is my math teacher."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19239"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12530"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12530"
+                  text: "The tournament was a disappointing event."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19240"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12531"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12531"
+                  text: "Brevity is the soul of wit.  (Shakespeare)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19241"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12532"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12532"
+                  text: "A foolish consistency is the hobgoblin of little minds.  (Emerson)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19242"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12533"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12533"
+                  text: "According to the 1990 census, Wyoming is our least populous state."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19243"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12534"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12534"
+                  text: "Angel Falls in Venezuela is the world’s highest waterfall."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19244"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12535"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12535"
+                  text: "That sentence is the key to the entire novel."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19245"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12536"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12536"
+                  text: "The sunny evenings are my favorite part of daylight saving time."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19246"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12537"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12537"
+                  text: "The dark mornings are my least favorite part of daylight saving time."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19247"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12538"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12538"
+                  text: "The West Wing is one of the best shows on television these days."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19248"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12539"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12539"
+                  text: "Neil Stephenson’s The Diamond Age is a wonderful novel."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19249"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12540"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12540"
+                  text: "I’m an excellent driver.  (Rain Man)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19250"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12541"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12541"
+                  text: "That guy is the least attractive 22-year-old imaginable."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19251"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12542"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12542"
+                  text: "Diagramming sentences is an impressive problem-solving activity."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19252"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12543"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12543"
+                  text: "A bookshelf is the most important piece of furniture in a student apartment."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19253"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12544"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12544"
+                  text: "The Tituses were noisy neighbors."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19254"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12545"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12545"
+                  text: "The students seem happy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19255"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12546"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12546"
+                  text: "I grew sleepy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19256"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12547"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12547"
+                  text: "The soup tastes spicy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19257"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12548"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12548"
+                  text: "The soup smells awful."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19258"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12549"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12549"
+                  text: "The dog looks ferocious."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19259"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12550"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12550"
+                  text: "The guitar sounds out of tune."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19260"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12551"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12551"
+                  text: "The wrestler seems out of shape."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19261"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12552"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12552"
+                  text: "The palm tree looks healthy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19262"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12553"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12553"
+                  text: "That stew smells wonderful."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19263"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12554"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12554"
+                  text: "Your idea seems feasible."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19264"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12555"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12555"
+                  text: "The wrestling match seemed fake."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19265"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12556"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12556"
+                  text: "He grew old before his time."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19266"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12557"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12557"
+                  text: "She seemed wise beyond her years."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19267"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12558"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12558"
+                  text: "The fish tastes funny."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19268"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12559"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12559"
+                  text: "The test looks hard."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19269"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12560"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12560"
+                  text: "The grammar class seems fun."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19270"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12561"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12561"
+                  text: "The kitten looks lost."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19271"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12562"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12562"
+                  text: "The documentary seems fascinating."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19272"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12563"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12563"
+                  text: "You look marvelous!  (Billy Crystal as Fernando)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19273"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12564"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12564"
+                  text: "On Friday the weather suddenly turned colder."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19274"
+                  value: 100
+                  text: "IV"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12565"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12565"
+                  text: "My uncle remained a bachelor."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19275"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12566"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12566"
+                  text: "Our new neighbors became our best friends."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19276"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12567"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12567"
+                  text: "You look a mess!"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19277"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12568"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12568"
+                  text: "In six weeks, the students became experts in grammar."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19278"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12569"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12569"
+                  text: "Schizophrenia remains a complete mystery."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19279"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12570"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12570"
+                  text: "The song became a big hit."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19280"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12571"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12571"
+                  text: "The orphan girl became a world class journalist."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19281"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12572"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12572"
+                  text: "Slowly, the house became a home."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19282"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12573"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12573"
+                  text: "After the breakup, Jackie became a much more confident woman."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19283"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12574"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12574"
+                  text: "The wild card stock purchase turned into a great investment."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19284"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12575"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12575"
+                  text: "Alaska became the forty-ninth state in 1959."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19285"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12576"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12576"
+                  text: "They remained the best of friends."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19286"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12577"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12577"
+                  text: "Despite her kiss, the frog remained a frog."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19287"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12578"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12578"
+                  text: "Lynching’s popularity became America’s lasting shame."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19288"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12579"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12579"
+                  text: "That boring story turned into a hit movie."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19289"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12580"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12580"
+                  text: "The pollution of lakes has become a major environmental problem throughout the world."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19290"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12581"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12581"
+                  text: "That little kid turned into an accomplished violin player."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19291"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12582"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12582"
+                  text: "The ugly duckling turned into a beautiful swan."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19292"
+                  value: 100
+                  text: "V"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12583"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12583"
+                  text: "The grammar students smiled."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19293"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12584"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12584"
+                  text: "John slept."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19294"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12585"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12585"
+                  text: "John snores."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19295"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12586"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12586"
+                  text: "The visitors from Canada arrived."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19296"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12587"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12587"
+                  text: "My best friend resides in Ft. Lauderdale."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19297"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12588"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12588"
+                  text: "The girls sneaked past the watchman."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19298"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12589"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12589"
+                  text: "He glanced at his watch"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19299"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12590"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12590"
+                  text: "The dude abides.  (The Big Lebowski)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19300"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12591"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12591"
+                  text: "We turned in at midnight."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19301"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12592"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12592"
+                  text: "Christopher will pull through."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19302"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12593"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12593"
+                  text: "My favorite sandals wore out."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19303"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12594"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12594"
+                  text: "The party broke up."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19304"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12595"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12595"
+                  text: "An old pickup turned into our driveway."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19305"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12596"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12596"
+                  text: "The fog comes on little cat feet.  (Carl Sandburg)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19306"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12597"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12597"
+                  text: "Betsy often jogs with her neighbor."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19307"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12598"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12598"
+                  text: "My best friend from high school arrived on Friday for the weekend."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19308"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12599"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12599"
+                  text: "Hector’s party broke up at midnight."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19309"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12600"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12600"
+                  text: "The bookcase fell over."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19310"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12601"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12601"
+                  text: "A crowd stood by the library entrance."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19311"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12602"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12602"
+                  text: "The union finally gave in to the management demands."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19312"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12603"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12603"
+                  text: "I stopped at the bakery for some doughnuts."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19313"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12604"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12604"
+                  text: "The whole gang reminisced at our class reunion about the good old days."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19314"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12605"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12605"
+                  text: "The students studied their grammar diagrams."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19315"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12606"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12606"
+                  text: "Maria suddenly hit the brakes."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19316"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12607"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12607"
+                  text: "The lead-off batter hits a home run."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19317"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12608"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12608"
+                  text: "That car needs four new tires."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19318"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12609"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12609"
+                  text: "We enjoyed the Fourth of July party."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19319"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12610"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12610"
+                  text: "Our team won the championship."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19320"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12611"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12611"
+                  text: "Red spots covered her neck and face."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19321"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12612"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12612"
+                  text: "The students studied prepositional phrases."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19322"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12613"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12613"
+                  text: "Dawn helped her cousin."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19323"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12614"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12614"
+                  text: "The boys prepared a terrific spaghetti dinner."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19324"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12615"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12615"
+                  text: "The mass of men lead lives of quiet desperation.  (Thoreau)"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19325"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12616"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12616"
+                  text: "England’s soccer fans have a reputation for wild behavior."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19326"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12617"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12617"
+                  text: "UCF plays UF on Saturday night."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19327"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12618"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12618"
+                  text: "The computer lab attendant simply ignored my pleas for help."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19328"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12619"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12619"
+                  text: "I looked over my notes before the exam."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19329"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12620"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12620"
+                  text: "Apparently our visitors from St. Louis missed their flight out of Orlando."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19330"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12621"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12621"
+                  text: "On Sundays the neighbor across the hall uses his treadmill at 6:00 a.m."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19331"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12622"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12622"
+                  text: "After two months the flight attendants called off their strike."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19332"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12623"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12623"
+                  text: "She came by her job in an unusual way."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19333"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12624"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12624"
+                  text: "The grammar students gave the professor their team projects."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19334"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12625"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12625"
+                  text: "The judges awarded Jane the trophy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19335"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12626"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12626"
+                  text: "The clerk handed me the wrong package."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19336"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12627"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12627"
+                  text: "Kathy’s father bought her a new car."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19337"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12628"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12628"
+                  text: "Steve gave himself a haircut."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19338"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12629"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12629"
+                  text: "My boss at the library promised me a raise."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19339"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12630"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12630"
+                  text: "I ordered you a cheeseburger with no onions."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19340"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12631"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12631"
+                  text: "Professor Logan assigned the class six chapters for Monday."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19341"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12632"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12632"
+                  text: "Mystery books gave me endless hours of pleasure during my childhood."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19342"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12633"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12633"
+                  text: "Titus handed the police a motive for the crime."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19343"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12634"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12634"
+                  text: "The police read Titus his rights."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19344"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12635"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12635"
+                  text: "She baked David a white cake with chocolate frosting for his birthday."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19345"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12636"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12636"
+                  text: "Tony tossed the boy his lost baseball."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19346"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12637"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12637"
+                  text: "Maria offered her mother the first piece of lasagna."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19347"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12638"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12638"
+                  text: "George taught his daughter the proper method of fly-fishing."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19348"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12639"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12639"
+                  text: "Jill showed her husband the plans for their new house."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19349"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12640"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12640"
+                  text: "Yesterday Luis bought himself an expensive leather coat on Park Avenue."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19350"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12641"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12641"
+                  text: "Eleanor served herself a huge bowl of ice cream with lots of chocolate sauce."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19351"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12642"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12642"
+                  text: "We gave each other identical wedding presents."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19352"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12643"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12643"
+                  text: "The grammar students consider the teacher intelligent."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19353"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12644"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12644"
+                  text: "The teacher made the grammar test easy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19354"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12645"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12645"
+                  text: "The boys painted their faces blue in honor of their favorite sports team."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19355"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12646"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12646"
+                  text: "The kids on our block drive my mother crazy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19356"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12647"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12647"
+                  text: "Some people consider Florida’s summers excessively long."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19357"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12648"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12648"
+                  text: "The documentary made history fascinating."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19358"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12649"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12649"
+                  text: "She painted her front door hot pink."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19359"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12650"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12650"
+                  text: "Without embarrassment, he made himself at home in her apartment."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19360"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12651"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12651"
+                  text: "She considers her husband perfect."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19361"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12652"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12652"
+                  text: "The factory made the chairs stainproof."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19362"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12653"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12653"
+                  text: "Her son considered her beautiful."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19363"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12654"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12654"
+                  text: "The beautiful weather made their wedding day perfect."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19364"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12655"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12655"
+                  text: "The heavy books made the librarian bone-weary."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19365"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12656"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12656"
+                  text: "The elegant bookshelves made the room especially cozy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19366"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12657"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12657"
+                  text: "The real estate agent considered a fireplace essential."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19367"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12658"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12658"
+                  text: "The numerous careless proofreading errors drove the teacher crazy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19368"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12659"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12659"
+                  text: "The artist colored the sky in his painting bright red."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19369"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12660"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12660"
+                  text: "Microsoft made their software appealing."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19370"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12661"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12661"
+                  text: "The sculptor made the woman’s body voluptuous."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19371"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12662"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12662"
+                  text: "Don Corleone made his business offer irresistible."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19372"
+                  value: 100
+                  text: "IX"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12663"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12663"
+                  text: "The students consider the grammar course a breeze."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19373"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12664"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12664"
+                  text: "The board members elected Barbara their chairperson."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19374"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12665"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12665"
+                  text: "They named their dog Sandy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19375"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12666"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12666"
+                  text: "She calls them a menace to the neighborhood."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19376"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12667"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12667"
+                  text: "The Republicans chose Bob Dole as their candidate in 1996."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19377"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12668"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12668"
+                  text: "By 1900, younger reporters considered Nellie Bly a curiosity."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19378"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12669"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12669"
+                  text: "Her son considered her the most beautiful woman in the world."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19379"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12670"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12670"
+                  text: "The AMPAS considered the Oscars a sacred trust."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19380"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12671"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12671"
+                  text: "David considered his satellite dish his most valuable possession."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19381"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12672"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12672"
+                  text: "The Toyota dealer considered the car a great buy."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19382"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12673"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12673"
+                  text: "He named his daughter Harlee."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19383"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12674"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12674"
+                  text: "Nowadays, she simply calls him “my dumpling.”"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19384"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12675"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12675"
+                  text: "Who elected you king?"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19385"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12676"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12676"
+                  text: "Despite the low score, Mike believed himself the winner."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19386"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12677"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12677"
+                  text: "Mary never considered herself a genius."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19387"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12678"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12678"
+                  text: "South Carolina elected Strom Thurmond senator again."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19388"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12679"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12679"
+                  text: "The corrupt political machine elected the former criminal mayor."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19389"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12680"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12680"
+                  text: "Time Magazine called That 70s Show one of the season’s most amusing new television shows."
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19390"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12681"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12681"
+                  text: "Professor Shuman called Understanding English Grammar “the preeminent book in its field.”"
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19391"
+                  value: 100
+                  text: "X"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12682"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12682"
+                  text: "May the force be with you. –Han Solo (Harrison Ford) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19392"
+                  value: 100
+                  text: "I"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12683"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12683"
+                  text: "All right, Mr. DeMille, I’m ready for my close-up. –Norma Desmond (Gloria Swanson) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19393"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12684"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12684"
+                  text: "Books will soon be obsolete in the schools. – Thomas Edison "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19394"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12685"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12685"
+                  text: "The graveyards are full of indispensable men. --Attributed to Charles de Gaulle "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19395"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12686"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12686"
+                  text: "In the future everyone will be famous for 15 minutes --Andy Warhol "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19396"
+                  value: 100
+                  text: "II"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12687"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12687"
+                  text: "Life itself is the proper binge. –Julia Child "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19397"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12688"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12688"
+                  text: "A difference of taste in jokes is a great strain on the affections. –George Eliot "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19398"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12689"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12689"
+                  text: "The most popular labor-saving device is still money. –Phyllis George "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19399"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12690"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12690"
+                  text: "Tact is after all a kind of mindreading. –Sarah Orne Jewett "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19400"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12691"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12691"
+                  text: "“Stay” is a charming word in a friend’s vocabulary. –Louisa May Alcott "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19401"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12692"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12692"
+                  text: "Music is the soundtrack for your life. –Dick Clark "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19402"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12693"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12693"
+                  text: "His death was a good career move. –Gore Vidal (about Truman Capote) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19403"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12694"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12694"
+                  text: "A boy’s best friend is his mother. –Norman Bates (Anthony Perkins) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19404"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12695"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12695"
+                  text: "Denial is not a river in Egypt. –Anonymous "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19405"
+                  value: 100
+                  text: "III"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12696"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12696"
+                  text: "You talkin’ to me? –Travis Bickle (Robert De Niro) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19406"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12697"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12697"
+                  text: "Get off my plane. –U.S. President James Marshall (Harrison Ford) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19407"
+                  value: 100
+                  text: "VI"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12698"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12698"
+                  text: "Superior people never make long visits. –Marianne Moore "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19408"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12699"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12699"
+                  text: "Light tomorrow with today! –Elizabeth Barrett Browning "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19409"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12700"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12700"
+                  text: "Who knows the thoughts of a child? –Nora Perry "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19410"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12701"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12701"
+                  text: "Make my day. –Detective “Dirty Harry” Callahan (Clint Eastwood) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19411"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12702"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12702"
+                  text: "Frankly, my dear, I don’t give a damn. –Rhett Butler (Clark Gable) "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19412"
+                  value: 100
+                  text: "VII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+            - 
+              type: "QA"
+              id: "12703"
+              user_id: "4525"
+              questions: 
+                - 
+                  id: "12703"
+                  text: "Hollywood will pay you a thousand dollars for a kiss, and fifty cents for your soul --Attributed to Marilyn Monroe "
+                  created_at: 1347652426
+                  user_id: "4525"
+              answers: 
+                - 
+                  id: "19413"
+                  value: 100
+                  text: "VIII"
+                  options: []
+              created_at: 1347652426
+              options: []
+              assets: null
+          options: []
+          assets: []
+      options: []
+      assets: []
