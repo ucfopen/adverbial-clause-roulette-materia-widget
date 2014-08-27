@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- INJECTS IE CLASSES ONTO HTML TAG -->
+<!--[if IE 8 ]>    <html class="IE8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="IE9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="en"> <!--<![endif]-->
+	<head>
+		<title>Routlette Widget Player</title>
+		<meta charset="utf-8" />
+
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" type="text/css" href="player.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- REQUIRED MATERIA JAVASCRIPT -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="materia.enginecore.js"></script>
+		<script type="text/javascript" src="materia.score.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+		<!-- OPTIONAL MATERIA JAVASCRIPT -->
+		<!-- <script type="text/javascript" src="/js/materia.storage.manager.js"></script> -->
+		<!-- <script type="text/javascript" src="/js/materia.storage.table.js"></script> -->
+
+		<!-- YOUR PREREQUISITES -->
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+
+		<!-- MAIN PLAYER SCRIPT -->
+		<script src="player.js"></script>
+	</head>
+	<body>
+		<!-- Game Container. The Roulette player lives here (not the modals though) -->
+		<div id="container">
+			<div id="head">
+				<div id="title1">
+					<div id="total_table" class="inline">
+						<table id="totalTable">
+							<thead class="inline" colspan="1">
+									<tr>
+										<th id="main_total">Total</th>
+									</tr>
+							</thead>
+							<tbody class="inline">
+									<tr>
+										<td id="money_total">$<span id="total">1000.00</span></td>
+									</tr>
+							</tbody>
+						</table>
+
+						<div id="detScores">
+							<div>
+								<p>
+									Progress: <span id="progress">0</span>&nbsp;/ 25 | Highest Total: $<span id="highTotal">N/A</span>
+								</p>
+								<p>
+									Right: <span id="numRight">0</span> | Wrong: <span id="numWrong">0</span>
+								</p>
+							</div>
+						</div>
+
+						<div id="adjustments">
+							<div id="adjustment">
+								ADJUSTMENT
+							</div>
+						</div>
+					</div>
+					<a id="help" href="#instructions" alt="Instructions" title="Instructions">
+							<i class="fa fa-question fa-1g"></i>
+					</a>
+				</div>
+				<div id="title2">
+					<h1 id="title_"><img src="assets/images/materia_logo.png" />ROULETTE</h1>
+				</div>
+			</div>
+
+			<div id="main">
+				<!-- Contians the roulette wheel and graphic of chips -->
+				<div id="left">
+
+					<img id="chips" src="assets/images/chips.png" 
+							alt="Game chips."	/>
+		  			<div id="roulette">
+		  				
+						<img id="roulette_wheel" src="assets/images/roulettewheel_10r.png" 
+							alt="Roulette Wheel. There is currently no guess placed."	/>
+						
+						<div>
+			            	<img id="ball" src="assets/images/ball.png" alt="ball that spins within Roulette Wheel"/>
+			            </div>
+
+		  			</div>
+		  		</div>
+
+		  		<!-- Contains the sentence container, pattern selector, bet selector, and BET submit button. -->
+		  		<div id="right">
+
+		  			<div id="sentence_container">
+		  				<table>
+							<thead>
+									<tr>
+										<th>Sentence</th>
+									</tr>
+							</thead>
+							<tbody>
+									<tr>
+										<td><div><span id="sentence1"></span></div></td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div id="bet_left">
+			    	</div>
+
+			    	<div id="bet_selector">
+			    		<div id="bet_row1">
+			    			<div value="I" id="bet_h1" class="bet_selection">
+			    					<div id="bet_p1" disabled="false" class="bs_selection bs_red" alt="1" title="1">I</div>
+			    				</div><!--
+			    			--><div value="II" id="bet_h2" class="bet_selection">
+			    					<div id="bet_p2" disabled="false" class="bs_selection bs_black" alt="2" title="2">II</div>
+			    				</div><!--
+			    			--><div value="III" id="bet_h3" class="bet_selection">
+			    					<div id="bet_p3" disabled="false" class="bs_selection bs_red" alt="3" title="3">III</div>
+			    				</div><!--
+			    			--><div value="IV" id="bet_h4" class="bet_selection">
+			    					<div id="bet_p4" disabled="false" class="bs_selection bs_black" alt="4" title="4">IV</div>
+			    				</div><!--
+			    			--><div value="V" id="bet_h5" class="bet_selection">
+			    					<div id="bet_p5" disabled="false" class="bs_selection bs_red" alt="5" title="5">V</div>
+			    				</div>
+			    		</div>
+			    		<div id="bet_row2" style="margin-top: -4px;">
+			    			<div value="VI" id="bet_h6" class="bet_selection">
+			    					<div id="bet_p6" disabled="false" class="bs_selection bs_black" alt="6" title="6">VI</div>
+			    				</div><!--
+			    			--><div value="VII" id="bet_h7" class="bet_selection">
+			    					<div id="bet_p7" disabled="false" class="bs_selection bs_red" alt="7" title="7">VII</div>
+			    				</div><!--
+			    			--><div value="VIII" id="bet_h8" class="bet_selection">
+			    					<div id="bet_p8" disabled="false" class="bs_selection bs_black" alt="8" title="8">VIII</div>
+			    				</div><!--
+			    			--><div value="IX" id="bet_h9" class="bet_selection">
+			    					<div id="bet_p9" disabled="false" class="bs_selection bs_red" alt="9" title="9">IX</div>
+			    				</div><!--
+			    			--><div value="X" id="bet_h10" class="bet_selection">
+			    					<div id="bet_p10" disabled="false" class="bs_selection bs_black" alt="10" title="10">X</div>
+			    				</div>
+			    		</div>
+			    	</div>
+
+			    	<div id="message"><span id="message_text">Pick a pattern.</span></div>
+
+			    	<div id="bet_container">
+				    	<form id="betting">
+								<select id="bet">
+									<option value="0"></option>
+									<option value="100">$100</option>
+									<option value="75">$75</option>
+									<option value="50">$50</option>
+									<option value="25">$25</option>
+								</select> 
+								<button id="submit_bet" class="option-style4" type="button" alt="Bet" title="Bet">
+								BET
+								<div class="icon"><i class="fa fa-dollar fa-1g"></i></div>
+								</button>
+							</p>
+				    	</form>
+				    </div>
+
+
+		  		</div>
+
+			</div>
+
+			<!-- Contains the options along bottom of game -->
+			<div id="options">
+					<a href="#guide" class="option-style1" type="button" alt="Guide" title="Guide">
+			  				<div id="guide_text">GUIDE</div>
+			  				<div class="icon1"><i class="fa fa-file-text-o fa-1g"></i></div>
+				  	</a>
+		  			<a href="#results" class="option-style2" type="button" alt="Results" title="Results">
+		  				RESULTS
+		  				<div class="icon"><i class="fa fa-check fa-1g"></i></div>
+		  			</a>
+		  			<a id="reset" class="option-style2" type="button" alt="Reset" title="Reset">
+		  				RESET
+		  				<div class="icon"><i class="fa fa-refresh fa-1g"></i></div>
+		  			</a>
+
+		  	</div>
+
+		</div>
+
+		<!-- The following are modals to be displayed during gameplay -->
+
+		<div id="start" class="modalDialog2">
+			<div>
+				<div class="modal2 center">
+					<h2>Welcome to Roulette!</h1>
+
+					<button id="beginnerStart" class="option-style3" type="button">
+		  				BEGINNER
+		  				<div class="icon"><i class="fa fa-play fa-1g"></i></div>
+		  			</button>
+		  			<button id="advancedStart" class="option-style3" type="button">
+		  				ADVANCED
+		  				<div class="icon"><i class="fa fa-play fa-1g"></i></div>
+		  			</button>
+				</div>
+			</div>
+		</div>
+
+		<button id="senExpand">
+			<span id="senExpandButton"><i class="fa fa-plus-square-o fa-1g"></i></span>
+		</button>
+
+		<div id="senExpansion">
+			<span id="sentence2"></span>
+		</div>
+
+		<div id="instructions" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<div class="modal">
+					<h2 class="inline">INSTRUCTIONS</h2>
+					<p>First off,<br /><em>Welcome to Roulette!</em></p>
+					<p>This game has been created in conjuction with your professor to further assist you with topics in your course. To ensure your success, you can find helpful tips below for gameplay.</p>
+					<img src="assets/images/help3.png" alt="help3" class="alignRight" /><br />
+					<p>Click "?" to get game instructions.</p><br /><br /><br />
+					<img src="assets/images/help1.png" alt="help1" class="alignLeft" /><br />
+					<p>Hover over your total to see your stats for your current game.</p><br /><br /><br /><br />
+					<img src="assets/images/help2.png" alt="help2" class="alignRight" /><br />
+					<p>Select the pattern of the sentence given, or whatever the given question is asking for, and select your bet total. Your potential winnings depend on how many patterns you pick. Choose either 1, 2, or 3 patterns and you will win 2X, 1.5X, or 1X you bet, respectively.</p><br /><br /><br /><br /><br /><br /><br />
+					<img src="assets/images/help0.png" alt="help0" class="center" />
+					<p>You may now play your bet and continue on with gameplay. If this button is grayed out, you forgot to do one of the following:
+						<ul>
+							<li>Select a pattern - or -</li>
+							<li>Select a bet amount</li>
+						</ul>
+					</p>
+					<p><strong><em>Good Luck!</em></strong></p>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="currentBet">
+			<p>
+				CURRENT BET: <span id="currBet">0</span>
+			</p>
+		</div>
+
+		<div id="guide" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<div class="modal">
+					<h2 class="inline">GUIDE</h2>
+					<h3 style="text-align: center;">Sentence Pattern Overview</h3>
+					<p>This overview collects some of the tips I give for distinguishing sentence patterns. I recommend that you print this out, or save it to your computer, and add your own tips as the semester progresses.</p>
+					<p>When patterns differ only in their complement slot (e.g., II and III, IV and V, IX and X), the adjective complement has a lower pattern number than the nominal complement.</p>
+					<p>WARNING: Some verbs can switch hit! They can be different patterns depending on what else is in the sentence. For example:</p>
+					<ul>
+					<li>He <em>made</em>&nbsp;chocolate cake. VII</li>
+					<li>He <em>made</em> her chocolate cake. VIII</li>
+					<li>He <em>made</em> her a happy woman. X&nbsp;</li>
+					</ul>
+					To figure out a pattern, you need to look at the whole sentence and not just the verb. But you should always START with the verb.<br />
+					<h3><strong>The </strong><strong><em>be</em></strong><strong> Patterns</strong></h3>
+					<p><strong>Forms of be:</strong>&nbsp;am, is, are, was, were, be, being, been.&nbsp;</p>
+					<p><span style="color: inherit; font-family: inherit; font-size: 17.5px;">I. NP be ADV/TP: The students are upstairs.</span></p>
+					<p><img src="assets/images/sentencepatternI.jpg" width="294" height="100" /></p>
+					<p>If the adverb is NOT an adverb of time or place, you don't have pattern I.&nbsp;</p>
+					<h3>II. NP be ADJ: The students are diligent.</h3>
+					<h3>III. NP1 be NP1: The students are scholars.</h3>
+					<p>&nbsp;<img src="assets/images/sentencepatternIIthroughV.jpg" width="294" height="104" /></p>
+					<p>Both pattern II and III have the same essential diagram.</p>
+					<p><strong>Equals sign test:</strong> The "be" verb in these sentences acts like an equals sign. If you substitute an equals sign for the verb and the equations convey the meaning of the sentences, you probably have patterns II or III. When the "be" verb is a helping (aka auxiliary) verb rather than the main verb, the equals sign won't work.</p>
+					<ul>
+					<li>The students are diligent. students = diligent [test works! II]</li>
+					<li>The students are scholars. students = scholars &nbsp;[test works! III]</li>
+					<li>The students are singing. students&nbsp;&ne; singing. [test does not work! not a "be" verb pattern]</li>
+					</ul>
+					<p><strong>Flip test:</strong> Another test to distinguish pattern II and III from sentences where "be" is a helping verb is the "flip" test: if you can flip the subject and subject complement around the verb and the meaning of the sentence doesn't change, then the "be" verb is probably the main verb.&nbsp;</p>
+					<ul>
+					<li>The students are scholars.<em> = The scholars are students.</em>&nbsp;(Be verb is main verb)</li>
+					<li>The students are singing patriotic songs.<em>&nbsp;&ne; *The patriotic songs are singing students.&nbsp;</em>(Be verb is helping verb)</li>
+					</ul>
+					<p><strong>"Very" test:&nbsp;</strong>For pattern II only. If you can stick the word "very" between the "be" verb and the word that follows, you probably have pattern II.</p>
+					<ul>
+					<li>The students are diligent. The students are <em>very</em> diligent. [test works! II]</li>
+					<li>The students are smiling. *The students are <em>very</em>&nbsp;smiling. [test doesn't work. VI]</li>
+					</ul>
+					<p>Patterns I, II, and III cannot be made passive.</p>
+					<p>&nbsp;</p>
+					<h3><strong>The Linking Verb Patterns</strong></h3>
+					<p><strong>Typical verbs:</strong> seem, become</p>
+					<h4>IV. NP V-lnk ADJ: The students seem diligent.</h4>
+					<h4>V. NP1 V-lnk NP1: The students became scholars.</h4>
+					<p><img src="assets/images/sentencepatternIIthroughV.jpg" width="304" height="108" /></p>
+					<p>The basic diagram for IV and V looks just like the basic diagram for II and III. You can use the <strong>equals sign</strong> test and the <strong>flip</strong> test (above) for these linking verb patterns, too: if the test works, the main verb is a linking verb.</p>
+					<p><strong>BE substitution test:</strong> You can usually substitute a&nbsp;<em>be</em> verb for the linking verb and the sentence meaning stays the same.</p>
+					<ul>
+					<li>The students <em>look</em> hungry. The students <em>are</em> hungry. [<em>look</em> is a linking verb]</li>
+					<li>The students&nbsp;<em>sing</em> funny. The students&nbsp;<em>are</em> funny. [<em>sing</em> is not a linking verb]</li>
+					</ul>
+					<p>Important: for the "be substitution test," you are only MENTALLY substituting a form of "be." If your sentence ACTUALLY has a form of "be" in front of the complement, you do not have pattern IV or V!</p>
+					<p><span>Dictionaries do NOT use the linking verb label. Dictionaries will often label pattern IV as "intransitive" and pattern V as "transitive."</span></p>
+					<p>Pattern IV and V diagrams look a lot like passive pattern IX and X diagrams. I recommend that you don't diagram passive sentences.</p>
+					<p>Patterns IV and V cannot be made passive.&nbsp;</p>
+					<p>&nbsp;</p>
+					<h3><strong>The Intransitive Verb Pattern</strong></h3>
+					<p><strong>Typical verb: </strong>giggle,&nbsp;sleep, yawn</p>
+					<h4>VI. NP V-int: The students slept.</h4>
+					<p>&nbsp;<img src="assets/images/sentencepatternVI.jpg" width="294" height="101" /></p>
+					<p>With an inTRANSitive verb, the action of the verb does not TRANSfer onto anything else. Nothing gets verbed on. The action remains with the subject, e.g., "Susie yawned." Nothing is being yawned--the action of yawning stays righ with Susie.&nbsp;</p>
+					<p>Dictionaries will often label pattern IV as "intransitive" as well as pattern VI, so if the dictionary labels your verb "intransitive," you still need to examine your sentence carefully to identify the pattern.&nbsp;</p>
+					<p>Pattern VI diagrams look like passive pattern VII diagrams. I recommend that you don't diagram passive sentences.</p>
+					<p>Pattern VI verbs cannot be made passive.</p>
+					<p>&nbsp;</p>
+					<h3><strong>The Transitive Verb Patterns</strong></h3>
+					<p>With a TRANSitive verb, the action of the verb gets TRANSferred onto an object. Something gets verbed on. The action is done to something besides the subject, e.g., Susie bounced the ball. The ball is being bounced.</p>
+					<p>All of these patterns--VII, VIII, IX, X--can be made passive. In fact, one test to see whether you have a transitive verb pattern is to make it passive. &nbsp;</p>
+					<h4>VII. NP1 V-tr NP2: The students studied their assignment.</h4>
+					<p><img src="assets/images/sentencepatternVII.jpg" width="331" height="116" /></p>
+					<p><strong>Typical verbs:&nbsp;</strong>buy, say, know, enjoy</p>
+					<p>Passive pattern VII diagrams look like active pattern VI diagrams. I recommend that you don't diagram passive sentences.</p>
+					<p>&nbsp;</p>
+					<h4>VIII. NP1 V-tr NP2 NP3: The students gave the professor their homework.</h4>
+					<p><img src="assets/images/sentencepatternVIII.jpg" width="344" height="123" /></p>
+					<p><strong>Typical verbs: </strong>hand,&nbsp;give, tell</p>
+					<p>In an active voice sentence, the indirect object can be located in one of two places: (1) between the subject and verb or (2) in a&nbsp;<em>to&nbsp;</em>or <em>for</em> phrase anywhere else in the sentence.</p>
+					<ul>
+					<li>I gave <em>her</em> cookies.</li>
+					<li>I gave cookies to <em>her</em>.</li>
+					</ul>
+					<p>An indirect object will NOT be located in a phrase that begins with <em>by, from, with</em>, or any other preposition!</p>
+					<p>When you transform the sentence to passive voice, you can put either the indirect object or the direct object in the subject position:</p>
+					<ul>
+					<li>Cookies were given to her. <em>[direct object moved to subject slot]</em></li>
+					<li>She was given cookies. <em>[indirect object moved to subject slot]</em></li>
+					</ul>
+					<p>When the direct object is moved to the subject slot in a passive sentence, the passive pattern VIII diagram will look like an active pattern VI diagram. I recommend that you don't diagram passive sentences.</p>
+					<p>When you transform the sentence to passive voice, you can keep the active subject in a&nbsp;<em>by</em> phrase, or you can omit it. The active subject will NOT be located in a phrase that begins with <em>to, from, with,</em> or any other preposition!</p>
+					<ul>
+					<li>Cookies were given to her. <em>[active subject omitted]</em></li>
+					<li>Cookies were given to her by me. <em>[active subject included in a "by" phrase]</em></li>
+					<li>She was given cookies.&nbsp;<em>[active subject omitted]</em></li>
+					<li>She was given cookies by me.&nbsp;<em>[active subject included in a "by" phrase]</em></li>
+					</ul>
+
+					<h3>IX. NP1 V-tr NP2 ADJ: The students consider the teacher intelligent.</h3>
+					<h3>X. NP1 V-tr NP2 NP2: The students consider the course a challenge.</h3>
+					<p><img src="assets/images/sentencepatternIXandX.jpg" width="347" height="87" /></p>
+					<p><strong>Typical verbs:&nbsp;</strong>consider, elect, find, make</p>
+					<p><span>Both pattern II and III have the same essential diagram.</span></p>
+					<p>Patterns IX and X are "magic wand" sentences, in which the action of the verb transforms the object into its complement. The pairs of sentences below can show you the difference:</p>
+					<ul>
+					<li>He made her a tuna sandwich. <em>[He made a tuna sandwich and gave it to to her. VIII]</em></li>
+					<li>He made her a tuna sandwich. <em>[He waved his magic wand, and poof! she became a tuna sandwich! X]</em></li>
+					</ul>
+					<em><br /></em>
+					<ul>
+					<li>She painted the blue room. <em>[Which room did she paint? the blue room, not the white one. VII.]</em></li>
+					<li>She painted the room blue. <em>[She waved her magic wand, and poof! the room became blue! IX]</em></li>
+					</ul>
+					<em><br /></em>
+					<ul>
+					<li>They elected a mayor.&nbsp;<em>[A mayor was elected, but no one in the sentence was transformed into a mayor. VII]</em></li>
+					<li>They elected Alex mayor.&nbsp;<em>[They waved their magic wand, and poof! Alex became the mayor! X]</em></li>
+					</ul>
+					<p><strong>"To be" test:</strong> If a sentence is pattern IX or X, you can often mentally stick the phrase "to be" between the object and the object complement:</p>
+					<ul>
+					<li>Pam found her job a challenge. Pam found her job&nbsp;<em>to be</em> a challenge. [The test works! X]</li>
+					<li>Pam found her job the hard way. *Pam found her job&nbsp;<em>to be&nbsp;</em>the hard way.&nbsp;[The test fails. VII]</li>
+					</ul>
+					<p>Important: for this test, you only MENTALLY add the words "to be."&nbsp;</p>
+					<p><strong>Expletive "as":</strong> Sometimes pattern X has the word "as"<em>&nbsp;</em>stuck between object and complement. That's ok:</p>
+					<ul>
+					<li>They elected Chris <em>as</em> mayor.</li>
+					</ul>
+					<p>The job of an expletive is to call attention to what follows. An expletive "as" does not change the sentence pattern.</p>
+					<p>Passive pattern IX and X diagrams look a lot like active pattern IV and V diagrams. I recommend that you don't diagram passive voice sentences.</p>
+					<p>&nbsp;</p>
+					<strong style="color: inherit; font-family: inherit; font-size: 1.5em;">Passive voice diagrams</strong>
+					<p>Passive voice diagrams are shown in ch. 5 of your textbook if you want to see them. However, I recommend that you don't diagram passive voice sentences. Instead, untransform the sentence first, making it active voice, then diagram it.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="resultsModal" class="modalDialog4">
+			<div class="center">
+				<p><span id="resultsModalResult"></span><br />
+
+				<div id="resultsModalContainer">
+					<span id="resultsModalText"></span><br />
+
+					<span id="resultsModalExample"></span></p>
+				</div>
+
+				<a id="next" class="option-style2" type="button" alt="Next" title="Next">
+	  				NEXT
+	  				<div class="icon"><i class="fa fa-play fa-1g"></i></div>
+	  			</a>
+
+			</div>
+		</div>
+
+		<div id="resetModal" class="modalDialog5">
+			<div class="center">
+				
+				<h2>Are you sure you want to reset your game?</h2>
+					<h3>(By pressing "YES" you will erase all of your current progress)</h3>
+
+				<a id="yes" class="option-style2" type="button" alt="Yes" title="Yes">
+	  				YES
+	  			</a>
+	  			<a id="no" class="option-style2" type="button" alt="No" title="No">
+	  				NO
+	  			</a>
+
+			</div>
+		</div>
+
+		<div id="finishModal" class="modalDialog">
+			<div class="modal center">
+				<h2 class="inline">Results</h2>
+					<p><span id="finishModalText"></span></p>
+
+					<div class="textLeft">
+						<p>Question 1: <span id="f1_results">You have not yet answered this question.</span></p>	
+						<p>Question 2: <span id="f2_results">You have not yet answered this question.</span></p>	
+						<p>Question 3: <span id="f3_results">You have not yet answered this question.</span></p>	
+						<p>Question 4: <span id="f4_results">You have not yet answered this question.</span></p>	
+						<p>Question 5: <span id="f5_results">You have not yet answered this question.</span></p>	
+						<p>Question 6: <span id="f6_results">You have not yet answered this question.</span></p>	
+						<p>Question 7: <span id="f7_results">You have not yet answered this question.</span></p>	
+						<p>Question 8: <span id="f8_results">You have not yet answered this question.</span></p>	
+						<p>Question 9: <span id="f9_results">You have not yet answered this question.</span></p>	
+						<p>Question 10: <span id="f10_results">You have not yet answered this question.</span></p>
+						<p>Question 11: <span id="f11_results">You have not yet answered this question.</span></p>
+						<p>Question 12: <span id="f12_results">You have not yet answered this question.</span></p>
+						<p>Question 13: <span id="f13_results">You have not yet answered this question.</span></p>
+						<p>Question 14: <span id="f14_results">You have not yet answered this question.</span></p>
+						<p>Question 15: <span id="f15_results">You have not yet answered this question.</span></p>
+						<p>Question 16: <span id="f16_results">You have not yet answered this question.</span></p>
+						<p>Question 17: <span id="f17_results">You have not yet answered this question.</span></p>
+						<p>Question 18: <span id="f18_results">You have not yet answered this question.</span></p>
+						<p>Question 19: <span id="f19_results">You have not yet answered this question.</span></p>
+						<p>Question 20: <span id="f20_results">You have not yet answered this question.</span></p>
+						<p>Question 21: <span id="f21_results">You have not yet answered this question.</span></p>
+						<p>Question 22: <span id="f22_results">You have not yet answered this question.</span></p>
+						<p>Question 23: <span id="f23_results">You have not yet answered this question.</span></p>
+						<p>Question 24: <span id="f24_results">You have not yet answered this question.</span></p>
+						<p>Question 25: <span id="f25_results">You have not yet answered this question.</span></p>
+					</div>
+				
+				<a id="finish" class="option-style2" type="button" alt="Finish" title="Finish">
+	  				RESET
+	  				<div class="icon"><i class="fa fa-check fa-1g"></i></div>
+	  			</a>
+
+			</div>
+		</div>
+
+		<div id="results" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<div class="modal">
+					<h2 class="inline">Results</h2>
+					<p>Question 1: <span id="q1_results">You have not yet answered this question.</span></p>	
+					<p>Question 2: <span id="q2_results">You have not yet answered this question.</span></p>	
+					<p>Question 3: <span id="q3_results">You have not yet answered this question.</span></p>	
+					<p>Question 4: <span id="q4_results">You have not yet answered this question.</span></p>	
+					<p>Question 5: <span id="q5_results">You have not yet answered this question.</span></p>	
+					<p>Question 6: <span id="q6_results">You have not yet answered this question.</span></p>	
+					<p>Question 7: <span id="q7_results">You have not yet answered this question.</span></p>	
+					<p>Question 8: <span id="q8_results">You have not yet answered this question.</span></p>	
+					<p>Question 9: <span id="q9_results">You have not yet answered this question.</span></p>	
+					<p>Question 10: <span id="q10_results">You have not yet answered this question.</span></p>	
+					<p>Question 11: <span id="q11_results">You have not yet answered this question.</span></p>	
+					<p>Question 12: <span id="q12_results">You have not yet answered this question.</span></p>	
+					<p>Question 13: <span id="q13_results">You have not yet answered this question.</span></p>	
+					<p>Question 14: <span id="q14_results">You have not yet answered this question.</span></p>	
+					<p>Question 15: <span id="q15_results">You have not yet answered this question.</span></p>	
+					<p>Question 16: <span id="q16_results">You have not yet answered this question.</span></p>	
+					<p>Question 17: <span id="q17_results">You have not yet answered this question.</span></p>	
+					<p>Question 18: <span id="q18_results">You have not yet answered this question.</span></p>	
+					<p>Question 19: <span id="q19_results">You have not yet answered this question.</span></p>	
+					<p>Question 20: <span id="q20_results">You have not yet answered this question.</span></p>	
+					<p>Question 21: <span id="q21_results">You have not yet answered this question.</span></p>	
+					<p>Question 22: <span id="q22_results">You have not yet answered this question.</span></p>	
+					<p>Question 23: <span id="q23_results">You have not yet answered this question.</span></p>	
+					<p>Question 24: <span id="q24_results">You have not yet answered this question.</span></p>	
+					<p>Question 25: <span id="q25_results">You have not yet answered this question.</span></p>	
+				</div>
+			</div>
+		</div>
+
+		<!-- INITIALIZE -->
+		<script type="text/javascript">
+			Materia.Engine.start(Roulette.Engine);
+		</script>
+
+	</body>
+</html>
