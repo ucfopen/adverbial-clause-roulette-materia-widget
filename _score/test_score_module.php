@@ -5,7 +5,7 @@
  * @group Score
  * @group Matching
  */
-class Test_Score_Modules_Matching extends \Basetest
+class Test_Score_Modules_Roulette extends \Basetest
 {
 
 	protected function _get_qset()
@@ -141,7 +141,7 @@ class Test_Score_Modules_Matching extends \Basetest
 	{
 		$this->_asAuthor();
 
-		$title = 'MATCHING SCORE MODULE TEST';
+		$title = 'ROULETTE SCORE MODULE TEST';
 		$widget_id = $this->_find_widget_id($version);
 		$qset = (object) ['version' => 1, 'data' => $this->_get_qset()];
 
@@ -150,8 +150,8 @@ class Test_Score_Modules_Matching extends \Basetest
 
 	public function test_check_correct()
 	{
-		//last chance cadet
-		$inst = $this->_makeWidget('Last Chance Cadet');
+		//was from last chance cadet
+		$inst = $this->_makeWidget('Roulette');
 		$play_session = \Materia\Api::session_play_create($inst->id);
 		$qset = \Materia\Api::question_set_get($inst->id, $play_session);
 
@@ -208,8 +208,8 @@ class Test_Score_Modules_Matching extends \Basetest
 
 	public function test_check_incorrect()
 	{
-		//last chance cadet
-		$inst = $this->_makeWidget('Matching');
+		//was from last chance cadet
+		$inst = $this->_makeWidget('Roulette');
 		$play_session = \Materia\Api::session_play_create($inst->id);
 		$qset = \Materia\Api::question_set_get($inst->id, $play_session);
 

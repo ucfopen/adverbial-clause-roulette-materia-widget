@@ -1,7 +1,6 @@
 (function() {
   Namespace('Roulette').Engine = (function() {
 
-
     /////////////////////////////// HELPER FUNCTIONS & VARIABLES ///////////////////////////////
 
     // The following is a double array of example sentences of each pattern. i.e. example[pattern][exampleToDisplay(1-3)]

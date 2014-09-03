@@ -12,9 +12,9 @@ Updated	: 3/14
 (function() {
   var EnigmaCreator;
 
-  EnigmaCreator = angular.module('enigmaCreator', []);
+  RouletteCreator = angular.module('rouletteCreator', []);
 
-  EnigmaCreator.controller('enigmaCreatorCtrl', [
+  RouletteCreator.controller('rouletteCreatorCtrl', [
     '$scope', function($scope) {
       $scope.title = '';
       $scope.qset = {};
@@ -178,7 +178,7 @@ Updated	: 3/14
     }
   ]);
 
-  Namespace('Enigma').Creator = (function() {
+  Namespace('Roulette').Creator = (function() {
     var $scope, initExistingWidget, initNewWidget, onMediaImportComplete, onQuestionImportComplete, onSaveClicked, onSaveComplete, zIndex, _buildSaveData, _buildScaffold, _initDragDrop, _initScope;
     $scope = {};
     zIndex = 9999;
