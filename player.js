@@ -516,6 +516,10 @@
         } else {
           var multiLine = set.items[sample].answers[0].text.split("\n");
           var multiWord = multiLine[multiLine.length - 1].split(" ");
+          
+          if ( pattern( multiWord[0] ) == false ) {
+            multiWord = multiLine[multiLine.length - 2].split(" ");
+          }
 
           for ( var j = 0; j < multiWord.length; j++) {
             sample_pattern.push(multiWord[j]);
@@ -628,7 +632,9 @@
             $('#f'+ count + '_results').html("<font color = \"red\">INCORRECT</font><br />" + patterns.curr_sample + "<br />Correct Answer: " + patterns.curr_pattern + ", You answered: " + patternInverse2(patternGuess) );
             $('#resultsModalResult').html("<font color = \"red\" size = \"20px\">INCORRECT</font>");
             $('#resultsModalText').html(patterns.curr_sample + "<br /><br />Correct Answer: " + patterns.curr_pattern + ", You answered: " + patternInverse2(patternGuess) + "<br />");
-            $('#resultsModalExample').html(exampleStatement[sample] + patterns.curr_pattern + ": " + example[ pattern(patterns.curr_pattern[0]) ][sample] );
+            if ( set == qset.beginner ) {
+              $('#resultsModalExample').html(exampleStatement[sample] + patterns.curr_pattern + ": " + example[ pattern(patterns.curr_pattern[0]) ][sample] );
+            }
           }
 
           for (var k = 0; k < patternGuess.length; k++) {
