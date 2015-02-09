@@ -633,7 +633,7 @@
             $('#resultsModalResult').html("<font color = \"red\" size = \"20px\">INCORRECT</font>");
             $('#resultsModalText').html(patterns.curr_sample + "<br /><br />Correct Answer: " + patterns.curr_pattern + ", You answered: " + patternInverse2(patternGuess) + "<br />");
             if ( set == qset.beginner ) {
-              $('#resultsModalExample').html(exampleStatement[sample] + patterns.curr_pattern + ": " + example[ pattern(patterns.curr_pattern[0]) ][sample] );
+              $('#resultsModalExample').html(exampleStatement[sample] + patterns.curr_pattern + ": " + example[ pattern(patterns.curr_pattern[0])-1 ][sample] );
             }
           }
 
