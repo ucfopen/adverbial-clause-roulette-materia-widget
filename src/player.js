@@ -415,7 +415,7 @@
     var reset = false;
 
     start = function(instance, qset, version) {
-
+      console.log("Instance: ", instance, "  qset: ", qset, "  version: ", version);
       //Makes ball dissapear when document loads
       $("#ball").hide();
 
@@ -500,7 +500,7 @@
 
 
       //loads sentence to the game
-      //All inclusive. Assigns sentence, pattern, and numbe to spinTo to in-game variables.
+      //All inclusive. Assigns sentence, pattern, and number to spinTo to in-game variables.
       // Displays sentence to user
       var sample_pattern = [];
       function selectSentence () {
