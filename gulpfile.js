@@ -149,6 +149,7 @@ gulp.task('copy:init-baseWidgetFiles', function()
 	// Copy non-prepocessed files
 	return gulp.src([sourceString + 'src/install.yaml',
 					sourceString + 'src/demo.json',
+					sourceString + 'src/questions.json',
 					sourceString + 'src/*.html',
 					sourceString + 'src/*.js',
 					sourceString + 'src/*.jsx',

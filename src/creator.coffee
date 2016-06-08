@@ -2,7 +2,7 @@ PopupCreator = angular.module( 'popupCreator', [] )
 
 PopupCreator.controller 'popupCtrl', ['$scope', ($scope) ->
 	$scope.widget =
-		engineName: ""
+		engineName: "Roulette"
 		title     : ""
 
 	$scope.state =

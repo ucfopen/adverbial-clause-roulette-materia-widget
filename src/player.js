@@ -406,7 +406,7 @@
     var showCurrBet = false;
 
     // sets limits to qset
-    var set;
+    var set = {};
     var setSize;
 
     var senExpand = false;
@@ -415,9 +415,19 @@
     var reset = false;
 
     start = function(instance, qset, version) {
-      console.log("Instance: ", instance, "  qset: ", qset, "  version: ", version);
       //Makes ball dissapear when document loads
       $("#ball").hide();
+      // For created instance, this bakes in the qset
+      if(qset.beginner === undefined)
+      {
+        var wiggleWaggle = {};
+        $.getJSON('questions.json', function(data)
+        {
+          wiggleWaggle.beginner = data.qset.data.beginner;
+          wiggleWaggle.advanced = data.qset.data.advanced;
+        });
+        qset = wiggleWaggle;
+      }
 
       // User has chosen to use the beginner qset. Beginner qset loaded to set variable for use in-game
       // This is triggered when the user selects [Beginner] within the #startModal
