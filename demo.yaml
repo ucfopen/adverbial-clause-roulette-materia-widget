@@ -4517,24 +4517,6 @@ qset:
           questions:
             -
               text: |
-                "Well, come see a fat old man sometime."
-                -True Grit (1969)
-          answers:
-            -
-              id: 0
-              value: 100
-              options: [ ]
-              text: VII
-          options: [ ]
-          assets: null
-        -
-          materiaType: question
-          id: 0
-          type: QA
-          created_at: 1399754157
-          questions:
-            -
-              text: |
                 "Where does he get those wonderful toys?"
                 -Batman (1989)
           answers:
