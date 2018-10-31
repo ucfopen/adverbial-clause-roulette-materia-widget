@@ -1,22 +1,16 @@
 const path = require('path')
+const widgetWebpack = require('materia-widget-development-kit/webpack-widget')
+const entries = widgetWebpack.getDefaultEntries()
 
-let srcPath = path.join(process.cwd(), 'src')
-let outputPath = path.join(process.cwd(), 'build')
+// use default creator
+delete entries['creator.js']
+delete entries['creator.css']
 
-// load the reusable legacy webpack config from materia-widget-dev
-let webpackConfig = require('materia-widget-development-kit/webpack-widget').getLegacyWidgetBuildConfig({
-	preCopy: [
-		{
-			from: srcPath+'/player.js',
-			to: outputPath
-		}
-	]
-})
+entries['player.js'] = [path.join(__dirname, 'src', 'player.js')]
 
-delete webpackConfig.entry['player.js']
-webpackConfig.entry['player.css'] = [
-	path.join(__dirname, 'src', 'player.html'),
-	path.join(__dirname, 'src', 'player.css')
-]
+let options = {
+	entries: entries,
+}
 
-module.exports = webpackConfig
+module.exports = widgetWebpack.getLegacyWidgetBuildConfig(options)
+

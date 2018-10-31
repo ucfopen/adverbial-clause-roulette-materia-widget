@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!-- INJECTS IE CLASSES ONTO HTML TAG -->
-<!--[if IE 8 ]>    <html class="IE8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="IE9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="en"> <!--<![endif]-->
+<html lang="en">
 	<head>
 		<title>Routlette Widget Player</title>
 		<meta charset="utf-8" />
@@ -12,19 +9,15 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- REQUIRED MATERIA JAVASCRIPT -->
-		<script type="text/javascript" src="materia.enginecore.js"></script>
-
-		<!-- OPTIONAL MATERIA JAVASCRIPT -->
-		<!-- <script type="text/javascript" src="/js/materia.storage.manager.js"></script> -->
-		<!-- <script type="text/javascript" src="/js/materia.storage.table.js"></script> -->
+		<script src="materia.enginecore.js"></script>
 
 		<!-- YOUR PREREQUISITES -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
 
 		<!-- MAIN PLAYER SCRIPT -->
-		<script type="text/javascript" src="player.js"></script>
+		<script src="player.js"></script>
 	</head>
 	<body>
 		<!-- Game Container. The Roulette player lives here (not the modals though) -->
@@ -494,7 +487,7 @@
 		</div>
 
 		<!-- INITIALIZE -->
-		<script type="text/javascript">
+		<script>
 			Materia.Engine.start(Roulette.Engine);
 		</script>
 
