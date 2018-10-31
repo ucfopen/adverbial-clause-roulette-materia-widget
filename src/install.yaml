@@ -12,7 +12,7 @@ general:
   is_storage_enabled: No
   api_version: 2
 files:
-  creator: creator.html
+  creator: default
   player: player.html
   flash_version: 0
 score:
@@ -25,13 +25,13 @@ meta_data:
   supported_data:
     - Multiple Choice
   about: >
-    Roulette is a re-creations of the classic 
-    casino game for  only study and quiz tool 
+    Roulette is a re-creations of the classic
+    casino game for  only study and quiz tool
     for reviewing concepts and principles.
-    Questions are seperated into beginner and 
+    Questions are seperated into beginner and
     advanced sets.
   excerpt: >
-    A re-creations of the classic casino game 
+    A re-creations of the classic casino game
     for only study and quiz tool.
-    Questions are seperated into beginner and 
+    Questions are seperated into beginner and
     advanced sets.
