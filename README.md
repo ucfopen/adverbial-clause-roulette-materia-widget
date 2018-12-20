@@ -3,7 +3,7 @@
     Roulette: A Materia Widget
 </h1>
 
-Roulette is a re-creations of the classic casino game for  only study and quiz tool for reviewing concepts and principles. Questions are seperated into beginner and advanced sets.. Roulette is designed for use with [Materia](https://github.com/ucfopen/Materia), an open-source platform for interactive course content developed by the University of Central Florida.
+Roulette is a re-creations of the classic casino game for  only study and quiz tool for reviewing concepts and principles. Questions are seperated into beginner and advanced sets. Roulette is designed for use with [Materia](https://github.com/ucfopen/Materia), an open-source platform for interactive course content developed by the University of Central Florida.
 
 ![Roulette Player](src/_screen-shots/1.png)
 
