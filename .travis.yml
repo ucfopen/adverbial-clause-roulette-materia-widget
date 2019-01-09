@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+- '6'
+cache:
+  yarn: true
+  directories:
+  - node_modules
+before_install:
+- npm config set spin false
+- npm install -g npm@^5
+script:
+- yarn test-ci
+- yarn build
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+
+  file:
+    - build/_output/adverb-clause-roulette.wigt
+    - build/_output/adverb-clause-roulette-build-info.yml
+  on:
+    tags: true
+    repo: ucfopen/adverbial-clause-roulette-materia-widget
+notifications:
+  email: false
+  slack:
+
