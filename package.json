@@ -1,7 +1,7 @@
 {
-  "name": "@ucfopen/roulette",
+  "name": "@ucfopen/adverb-roulette",
   "materia": {
-    "cleanName": "roulette"
+    "cleanName": "adverb-roulette"
   },
   "version": "1.0.2",
   "scripts": {
