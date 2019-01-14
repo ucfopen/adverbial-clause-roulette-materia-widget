@@ -17,8 +17,8 @@ deploy:
   api_key:
     secure: "l2+oOAYATpgulRB5IDmo4X7BVyeB3woD4w2N+oEtK2ubTBzaVifUJ8+ZXjKmm+SlaGbFo6s6q7NxJONIRXw/4NGp8skHcXfdcCJnAm8k28WD1QjONzLZHSxvbtOFnnqHV5/bIHc7zsQ8ERBArHg25cpLhijSbIQRXy9pFD/NAdAG7ih87iufeYqMwh/2AngujzYMKiIILdFALwmigIERZTufzjX0+uMEMwUB0bmBsyqVvBajn7/WE+9JSqYLhrBrOdM8S+22vsOAmQ4j4iLlSnpLNGKOjOQ0u3VNMfdT+MoXgvLwwcOhgpmgGVIdcDqSxndEOc4S+WvG/H5RLOQBNJtfz//wEp4iX0qr2cDXa9dw/OqA9avSuwhlySbi2ILbkj5N0oH7OKp24GGE0lmueKzO/nZSeMz5WGj33aNJUpL0vmchmOO5SVI+DkoLkcyV5gP0VN+kVNlvBYx+vg1NEwFpnGIT6z6xzUFVxBpOXk9TygeeCC9CGM25zzGNLyVTTUTP8vq1bKc88DaDFNjdSlVWDERiqCQFt/Q+FrkhyweXqDkE8dr/vlp+Nx3j484LZ41UD6stgUnqbzu65VeRCCPtSmQHPyIwpeWHGdLAmNTW1Zr/YVjaiNlXSxaAEd9L0XwcyD5Nc+pQYIcamDiDoxcnA6ZnSwnAWeiTbWpijeo="
   file:
-    - build/_output/adverb-clause-roulette.wigt
-    - build/_output/adverb-clause-roulette-build-info.yml
+    - build/_output/adverb-roulette.wigt
+    - build/_output/adverb-roulette-build-info.yml
   on:
     tags: true
     repo: ucfopen/adverbial-clause-roulette-materia-widget
